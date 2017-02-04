@@ -1,2 +1,1 @@
-# daily_gof
-gof_space
+### a gof a day, bad work away
