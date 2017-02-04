@@ -3,47 +3,47 @@
 ##创建型模式（Creational Patterns）
 这些设计模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用新的运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活。
 
-	[] 工厂模式（Factory Pattern）
+	工厂模式（Factory Pattern）
 	02-03
 	定义一个创建对象的接口，让其子类自己决定实例化哪一个工厂类，工厂模式使其创建过程延迟到子类进行。
 	
-	[] 抽象工厂模式（Abstract Factory Pattern）
+	抽象工厂模式（Abstract Factory Pattern）
 	02-03
 	提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。
 	
-	[] 单例模式（Singleton Pattern）
+	单例模式（Singleton Pattern）
 	01-13
 	保证一个类仅有一个实例，并提供一个访问它的全局访问点。
 	
-	[] 建造者模式（Builder Pattern）
+	建造者模式（Builder Pattern）
 	将一个复杂的构建与其表示相分离，使得同样的构建过程可以创建不同的表示。
 	
-	[] 原型模式（Prototype Pattern）
+	原型模式（Prototype Pattern）
 	用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象
 
 
 ##结构型模式（Structural Patterns）
 这些设计模式关注类和对象的组合。继承的概念被用来组合接口和定义组合对象获得新功能的方式。
 
-	[] 适配器模式（Adapter Pattern）
+	适配器模式（Adapter Pattern）
 	将一个类的接口转换成客户希望的另外一个接口。适配器模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。
 	
-	[] 桥接模式（Bridge Pattern）
+	桥接模式（Bridge Pattern）
 	将抽象部分与实现部分分离，使它们都可以独立的变化。
 	
-	[] 过滤器模式（Filter、Criteria Pattern）
+	过滤器模式（Filter、Criteria Pattern）
 	过滤器模式：这种模式允许开发人员使用不同的标准来过滤一组对象，通过逻辑运算以解耦的方式把它们连接起来
 	
-	[] 组合模式（Composite Pattern）
+	组合模式（Composite Pattern）
 	组合模式：将对象组合成树形结构以表示"部分-整体"的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。
 	
-	[] 装饰器模式（Decorator Pattern）
+	装饰器模式（Decorator Pattern）
 	装饰器模式：动态地给一个对象添加一些额外的职责。就增加功能来说，装饰器模式相比生成子类更为灵活。
 	
-	[] 外观模式（Facade Pattern）
+	外观模式（Facade Pattern）
 	外观模式：为子系统中的一组接口提供一个一致的界面，外观模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。
 	
-	[] 享元模式（Flyweight Pattern）
+	享元模式（Flyweight Pattern）
 	享元模式：运用共享技术有效地支持大量细粒度的对象。
 	
 	代理模式（Proxy Pattern）
@@ -53,40 +53,40 @@
 
 ##行为型模式（Behavioral Patterns）
 这些设计模式特别关注对象之间的通信。
-	[] 责任链模式（Chain of Responsibility Pattern）
+	责任链模式（Chain of Responsibility Pattern）
 	责任链模式：避免请求发送者与接收者耦合在一起，让多个对象都有可能接收请求，将这些对象连接成一条链，并且沿着这条链传递请求，直到有对象处理它为止。
 	
-	[] 命令模式（Command Pattern）
+	命令模式（Command Pattern）
 	命令模式：将一个请求封装成一个对象，从而使您可以用不同的请求对客户进行参数化。
 	
-	[] 解释器模式（Interpreter Pattern）
+	解释器模式（Interpreter Pattern）
 	解释器模式：给定一个语言，定义它的文法表示，并定义一个解释器，这个解释器使用该标识来解释语言中的句子。
 	
-	[] 迭代器模式（Iterator Pattern）
+	迭代器模式（Iterator Pattern）
 	迭代器模式：提供一种方法顺序访问一个聚合对象中各个元素, 而又无须暴露该对象的内部表示。
 	
-	[] 中介者模式（Mediator Pattern）
+	中介者模式（Mediator Pattern）
 	中介者模式：用一个中介对象来封装一系列的对象交互，中介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。
 	
-	[] 备忘录模式（Memento Pattern）
+	备忘录模式（Memento Pattern）
 	备忘录模式：在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。
 	
-	[] 观察者模式（Observer Pattern）
+	观察者模式（Observer Pattern）
 	
 	
-	[] 状态模式（State Pattern）
+	状态模式（State Pattern）
 	状态模式：定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有
 	依赖于它的对象都得到通知并被自动更新。
 	
-	[] 空对象模式（Null Object Pattern）
+	空对象模式（Null Object Pattern）
 	空对象模式：在空对象模式中，我们创建一个指定各种要执行的操作的抽象类和扩展该类的实体类，还创建一个未对该类做任何实现的空对象类，该空对象类将无缝地使用在需要检查空值的地方。
 	
-	[] 策略模式（Strategy Pattern）
+	策略模式（Strategy Pattern）
 	策略模式：定义一系列的算法,把它们一个个封装起来, 并且使它们可相互替换。
 	
-	[] 模板模式（Template Pattern）
+	模板模式（Template Pattern）
 	模板模式：定义一个操作中的算法的骨架，而将一些步骤延迟到子类中。模板方法使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。
 	
-	[] 访问者模式（Visitor Pattern）
+	访问者模式（Visitor Pattern）
 	访问者模式：主要将数据结构与数据操作分离。
 
